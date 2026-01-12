@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchoria | Modeli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body class="modeli-stranica">
+    <nav>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="TimeCraft Logo">
+            </a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="modeli.html">Modeli</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="dokumentacija.pdf" target="_blank">Dokumentacija</a></li>
+            <li><a href="autor.html">Autor</a></li>
+            <li><a href="projekat.rar" download class="btn-link">ZIP</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <main>
+        <section class="container">
+            <header class="naslov-centar">
+                <h2>Brendovi U Ponudi</h2>
+                <p>Kliknite na brend da istražite specifične modele, njihove karakteristike i cenu.</p>
+            </header>
+
+            <div id="brendovi-lista" class="brendovi-vertikalno"></div>
+
+            <div id="modeli-prikaz" class="modeli-grid-sekcija"></div>
+        </section>
+    </main>
+    
+    <div id="korpa-sidebar" class="korpa-zatvorena">
+    <div class="korpa-sadrzaj">
+        <div class="korpa-header">
+            <h3>Vaša Korpa</h3>
+            <button onclick="toggleKorpa()" class="btn-zatvori-korpu">&times;</button>
+        </div>
+        <div id="stavke-u-korpi">
+            <p class="prazna-poruka">Korpa je prazna.</p>
+        </div>
+        <div class="korpa-footer">
+            <hr>
+            <p>Ukupno: <span id="ukupna-cena">0€</span></p>
+            <button class="btn-poruci" onclick="alert('Hvala na porudžbini!')">Završi kupovinu</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="korpa-dugme-fiksno" onclick="toggleKorpa()">
+    Vaša Korpa <span id="brojac-stavki">0</span>
+    </div>
+   
+    <footer>
+        <p>&copy; 2026 Watchoria | Sva prava zadržana.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
